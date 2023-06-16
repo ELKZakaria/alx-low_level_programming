@@ -13,7 +13,8 @@ int main(void)
 {
 	srand(time(NULL));
 
-	int n = rand() % RAND_MAX;
+	int n;
+	n = rand() % RAND_MAX;
 
 	if (n < 0)
 	{
