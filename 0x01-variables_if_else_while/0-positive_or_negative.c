@@ -12,9 +12,9 @@
 int main(void)
 {
 	int n;
+
 	srand(time(NULL));
 	n = rand() % RAND_MAX;
-
 	if (n < 0)
 	{
 		printf("%d is negative\n", n);
@@ -30,4 +30,3 @@ int main(void)
 
 	return (0);
 }
-
