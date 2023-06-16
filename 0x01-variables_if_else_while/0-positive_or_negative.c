@@ -3,11 +3,11 @@
 #include <time.h>
 
 /**
- * main - random number
+ * main - Entry point of the program
  *
- * description - check the numbre if signed or unsigned
+ * Description: Generates a random number and checks if it is negative, positive, or zero.
  *
- * result: 0 (sucess)
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -25,8 +25,9 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is zero", n);
+		printf("%d is zero\n", n);
 	}
 
 	return (0);
 }
+
