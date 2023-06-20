@@ -1,11 +1,9 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * print_alphabet - check code
  *
  * Description: Prints the lowercase alphabet using _putchar
- *
- * Return: 0 (success)
  */
 void print_alphabet(void)
 {
