@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * test_isalpha - Test the _isalpha function
  *
- * Return: Always 0.
+ * @n: Number to pass to _isalpha function
  */
-int main(void)
+void test_isalpha(int n)
 {
-	print_alphabet_x10();
-	return (0);
+	int r;
+
+	r = _isalpha(n);
+	_putchar(r + '0');
+	_putchar('\n');
 }
