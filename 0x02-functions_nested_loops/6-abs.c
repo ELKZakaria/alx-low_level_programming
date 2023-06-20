@@ -2,5 +2,12 @@
 
 int _abs(int n)
 {
-	return (-n);
+	if (i >=0)
+	{
+		return (i);
+	}
+	else
+	{
+		return (-i);
+	}
 }
