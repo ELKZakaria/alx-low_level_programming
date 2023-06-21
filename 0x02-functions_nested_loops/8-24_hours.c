@@ -11,11 +11,11 @@ void jack_bauer(void)
     {
         for (minute = 0; minute < 60; minute++)
         {
-            _putchar('0' + (hour / 10));    // Print tens digit of hour
-            _putchar('0' + (hour % 10));    // Print ones digit of hour
+            _putchar('0' + (hour / 10));
+            _putchar('0' + (hour % 10));
             _putchar(':');
-            _putchar('0' + (minute / 10));  // Print tens digit of minute
-            _putchar('0' + (minute % 10));  // Print ones digit of minute
+            _putchar('0' + (minute / 10));
+            _putchar('0' + (minute % 10));
             _putchar('\n');
         }
     }
