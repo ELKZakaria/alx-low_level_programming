@@ -1,5 +1,4 @@
 #include "main.h"
-#include "0-putchar.c"
 
 /**
  * print_last_digit - Prints the last digit of a number.
