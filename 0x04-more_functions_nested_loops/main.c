@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	_putchar('a');
+	print_numbers();
 
 	return (0);
 }
