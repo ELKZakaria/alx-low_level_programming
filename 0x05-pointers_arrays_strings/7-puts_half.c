@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 #include <stdio.h>
 /**
  * puts_half - Prints half of a string, followed by a new line.
