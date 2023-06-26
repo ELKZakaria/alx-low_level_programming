@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
  * puts2 - Prints every other character of a string, followed by a new line.
