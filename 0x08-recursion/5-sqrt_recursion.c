@@ -15,13 +15,14 @@ int _sqrt_recursion(int n)
 }
 
 /**
-  4  * _sqrt - Write a function that returns the natural square
-  5  * @n: integer
-  6  *
-  7  * Description: Write a function that returns the natural square
-  8  *
-  9  * Return: int
- 10  */
+ * _sqrt - Write a function that returns the natural square
+ * @n: integer
+ * @i: integer
+ *
+ * Description: Write a function that returns the natural square
+ *
+ * Return: int
+ */
 int _sqrt(int n, int i)
 {
 	int s;
@@ -29,7 +30,7 @@ int _sqrt(int n, int i)
 	s = i * i;
 	if (s > n)
 		return (-1);
-	if (s == 0)
+	if (s == n)
 		return (i);
 	return (_sqrt(n, i + 1));
 }
