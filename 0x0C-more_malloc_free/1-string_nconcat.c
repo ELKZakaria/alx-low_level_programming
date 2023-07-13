@@ -9,32 +9,37 @@
  * @n: unsigned int
  * Return: string
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n) {
-  // Check if s1 or s2 is NULL.
-  if (s1 == NULL) {
-    s1 = "";
-  }
-  if (s2 == NULL) {
-    s2 = "";
-  }
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	char *s;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
-  // Get the length of s1.
-  int len1 = strlen(s1);
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
 
-  // If n is greater than the length of s2, then use the entire string s2.
-  int len2 = n >= strlen(s2) ? strlen(s2) : n;
+	if (n < len2)
+		s = malloc(sizeof(char) * (len1 + n + 1));
+	else
+		s = malloc(sizeof(char) * (len1 + len2 + 1));
 
-  // Allocate memory for the new string.
-  char *new_str = malloc(len1 + len2 + 1);
+	if (!s)
+		return (NULL);
 
-  // Copy s1 to the new string.
-  memcpy(new_str, s1, len1);
+	while (i < len1)
+	{
+		s[i] = s1[i];
+		i++;
+	}
 
-  // Copy the first n bytes of s2 to the new string.
-  memcpy(new_str + len1, s2, len2);
+	while (n < len2 && i < (len1 + n))
+		s[i++] = s2[j++];
 
-  // Null terminate the new string.
-  new_str[len1 + len2] = '\0';
+	while (n >= len2 && i < (len1 + len2))
+		s[i++] = s2[j++];
 
-  return new_str;
+	s[i] = '\0';
+
+	return (s);
 }
